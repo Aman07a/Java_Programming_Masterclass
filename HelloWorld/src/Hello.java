@@ -5,7 +5,7 @@ public class Hello {
         boolean isAlien = false;
         if (isAlien == false) {
             System.out.println("It is not an alien!");
-            System.out.println("And I am scared of aliens!");
+            System.out.println("And I am scared of aliens");
         }
 
         int topScore = 80;
@@ -13,7 +13,7 @@ public class Hello {
             System.out.println("You got the high score!");
         }
 
-        int secondTopScore = 81;
+        int secondTopScore = 95;
         if ((topScore > secondTopScore) && (topScore < 100)) {
             System.out.println("Greater than second top score an less than 100");
         }
@@ -24,12 +24,23 @@ public class Hello {
 
         int newValue = 50;
         if (newValue == 50) {
-            System.out.println("This is an error");
+            System.out.println("This is true");
         }
 
         boolean isCar = false;
-        if (isCar == false) {
+        if (!isCar) {
             System.out.println("This is not supposed to happen");
         }
+
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+
+        if (isDomestic) {
+            System.out.println("This car is domestic to our country");
+        }
+
+        String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
+
+        System.out.println(s);
     }
 }
