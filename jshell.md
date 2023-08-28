@@ -229,4 +229,33 @@ jshell> short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intVal
 jshell> short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue)); 
 shortTotal ==> 1800
 
+jshell> System.out.print("Float Value Range (" + Float.MIN_VALUE + " to " + Float.MAX_VALUE + ")" ); 
+Float Value Range (1.4E-45 to 3.4028235E38)
+jshell> System.out.print("Double Value Range (" + Double.MIN_VALUE + " to " + Double.MAX_VALUE + ")" ); 
+Double Value Range (4.9E-324 to 1.7976931348623157E308)
+jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5; 
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+
+jshell> myFloatValue = 5f;
+myFloatValue ==> 5.0
+
+jshell> myFloatValue = 5d;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  myFloatValue = 5d;
+|                 ^^
+
+jshell> float myOtherFloatValue = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myOtherFloatValue = 5.25;
+
+jshell> float myOtherFloatValue = (float) 5.25;
+myOtherFloatValue ==> 5.25
+
+jshell> float myOtherFloatValue = 5.25f;
+myOtherFloatValue ==> 5.25
+
 jshell>
