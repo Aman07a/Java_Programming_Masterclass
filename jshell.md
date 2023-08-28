@@ -258,4 +258,53 @@ myOtherFloatValue ==> 5.25
 jshell> float myOtherFloatValue = 5.25f;
 myOtherFloatValue ==> 5.25
 
+jshell> int myIntValue = 5; float myFloatValue = 5; double myDoubleValue = 5; 
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
+
+jshell> myIntValue = 5 / 2;
+myIntValue ==> 2
+
+jshell> myFloatValue = 5f / 2f;
+myFloatValue ==> 2.5
+
+jshell> myDoubleValue = 5d / 2d;
+myDoubleValue ==> 2.5
+
+jshell> myIntValue = 5 / 3;
+myIntValue ==> 1
+
+jshell> myFloatValue = 5f / 3f;
+myFloatValue ==> 1.6666666
+
+jshell> myDoubleValue = 5d / 3d;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> myDoubleValue = 5.00 / 3.00;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> myDoubleValue = 5.00 / 3;
+myDoubleValue ==> 1.6666666666666667
+
+jshell> myFloatValue = 5.00 / 3f;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  myFloatValue = 5.00 / 3f;
+|                 ^-------^
+
+jshell> double numberOfPounds = 200d;
+numberOfPounds ==> 200.0
+
+jshell> double convertedKilograms = numberOfPounds * 0.45359237d;
+convertedKilograms ==> 90.718474
+
+jshell> System.out.print("Converted Kilograms = " + convertedKilograms);
+Converted Kilograms = 90.718474
+jshell> double pi = 3.1415927d;
+pi ==> 3.1415927
+
+jshell> double anotherNumber = 3_000_000.4_567_890d;
+anotherNumber ==> 3000000.456789
+
 jshell>
