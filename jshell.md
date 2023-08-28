@@ -157,7 +157,6 @@ jshell> long bigLongLiteralValue = 2_147_483_647_234;
 |  Error:
 |  integer number too large
 |  long bigLongLiteralValue = 2_147_483_647_234;
-|                             ^
 
 jshell> long bigLongLiteralValue = 2_147_483_647_234L;
 bigLongLiteralValue ==> 2147483647234
@@ -166,9 +165,41 @@ jshell> short bigShortLiteralValue = 32768;
 |  Error:
 |  incompatible types: possible lossy conversion from int to short
 |  short bigShortLiteralValue = 32768;
-|                               ^---^
 
 jshell> short bigShortLiteralValue = 32767;
 bigShortLiteralValue ==> 32767
+
+jshell> short myMinShortValue = Short.MIN_VALUE; int myMinIntValue = Integer.MIN_VALUE;
+myMinShortValue ==> -32768
+myMinIntValue ==> -2147483648
+
+jshell> byte myMinByteValue = Byte.MIN_VALUE, myMaxByteValue = Byte.MAX_VALUE;
+myMinByteValue ==> -128
+myMaxByteValue ==> 127
+
+jshell> short firstShort = 1, int firstInteger = 2;
+|  Error:
+|  <identifier> expected
+|  short firstShort = 1, int firstInteger = 2;
+
+jshell> short firstShort = 1; int firstInteger = 2; 
+firstShort ==> 1
+firstInteger ==> 2
+
+jshell> byte firstByte = 1, byte secondByte = 2;
+|  Error:
+|  <identifier> expected
+|  byte firstByte = 1, byte secondByte = 2;
+
+jshell> byte myNewByteValue = (byte) (myMinByteValue / 2);
+myNewByteValue ==> -64
+
+jshell> short myNewShortValue = (myMinByteValue / 2);
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short myNewShortValue = (myMinByteValue / 2);
+
+jshell> short myNewShortValue = (short) (myMinShortValue / 2);
+myNewShortValue ==> -16384
 
 jshell>
