@@ -202,4 +202,31 @@ jshell> short myNewShortValue = (myMinByteValue / 2);
 jshell> short myNewShortValue = (short) (myMinShortValue / 2);
 myNewShortValue ==> -16384
 
+jshell> byte byteValue = 10;
+byteValue ==> 10
+
+jshell> short shortValue = 20;
+shortValue ==> 20
+
+jshell> int intValue = 50;
+intValue ==> 50
+
+jshell> long longTotal = 50000L + 10L * (byteValue + shortValue + intValue);
+longTotal ==> 50800
+
+jshell> int sumOfThree = byteValue + shortValue + intValue;
+sumOfThree ==> 80
+
+jshell> longTotal = 50000L + (10 * sumOfThree); 
+longTotal ==> 50800
+
+jshell> short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue)); 
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short shortTotal = (1000 + 10 * (byteValue + shortValue + intValue));
+|                      ^---------------------------------------------^
+
+jshell> short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue)); 
+shortTotal ==> 1800
+
 jshell>
