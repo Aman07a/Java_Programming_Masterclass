@@ -415,4 +415,91 @@ result ==> 5
 jshell> result = result % 3; // the remainder of (5 % 3) = 2
 result ==> 2
 
+jshell> {
+   ...>     int result = 1;
+   ...>     result = result + 1;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result++;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result--;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 0
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result -= 1;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 0
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 1;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 2
+
+jshell> {
+   ...>     int result = 1;
+   ...>     result += 5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 6
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result += 5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 15
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4
+
+jshell> {
+   ...>     int result = 10;
+   ...>     result = result - 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|      result = result - 5.5;
+|               ^----------^
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4.5
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result *= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 15.0
+
+jshell> {
+   ...>     double result = 10;
+   ...>     result /= 1.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 6.666666666666667
+
 jshell>
