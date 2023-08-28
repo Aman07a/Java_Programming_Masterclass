@@ -307,4 +307,42 @@ pi ==> 3.1415927
 jshell> double anotherNumber = 3_000_000.4_567_890d;
 anotherNumber ==> 3000000.456789
 
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myChar = 'DD';
+|  Error:
+|  unclosed character literal
+|  char myChar = 'DD';
+|                ^
+
+jshell> char myChar = 'D';
+myChar ==> 'D'
+
+jshell> char myUnicode = '\u0044';
+myUnicode ==> 'D'
+
+jshell> char myDecimalCode = 68;
+myDecimalCode ==> 'D'
+
+jshell> char mySimpleChar = '?';
+mySimpleChar ==> '?'
+
+jshell> char myUnicode = '\u003F';
+myUnicode ==> '?'
+
+jshell> char myDecimalCode = 63;
+myDecimalCode ==> '?'
+
+jshell> System.out.print("My values are " + mySimpleChar + myUnicode + myDecimalCode);
+My values are ???
+jshell> boolean myTrueBooleanValue = true;
+myTrueBooleanValue ==> true
+
+jshell> boolean myFalseBooleanValue = false;
+myFalseBooleanValue ==> false
+
+jshell> boolean isCustomerOverTwentyOne = true;
+isCustomerOverTwentyOne ==> true
+
 jshell>
