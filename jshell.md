@@ -386,4 +386,33 @@ jshell> double doubleNumber = 120.47; lastString = lastString + doubleNumber;
 doubleNumber ==> 120.47
 lastString ==> "1050120.47"
 
+jshell> int result = 1 + 2; // 1 + 2 = 3
+result ==> 3
+
+jshell> int peviousResult = result;
+peviousResult ==> 3
+
+jshell> result = result - 1; // 3 - 1 = 2
+result ==> 2
+
+jshell> System.out.print("peviousResult = " + peviousResult);
+peviousResult = 3
+jshell> char firstChar = 'A'; char secondChar = 'B'; 
+firstChar ==> 'A'
+secondChar ==> 'B'
+
+jshell> System.out.print(firstChar + secondChar); 
+131
+jshell> result = 2;
+result ==> 2
+
+jshell> result = result * 10; // 2 * 10 = 20
+result ==> 20
+
+jshell> result = result / 4; // 20 / 4 = 5
+result ==> 5
+
+jshell> result = result % 3; // the remainder of (5 % 3) = 2
+result ==> 2
+
 jshell>
