@@ -1,4 +1,4 @@
-package exercise17;
+package exercise15;
 
 public class SumOddRange {
     public static boolean isOdd(int number) {

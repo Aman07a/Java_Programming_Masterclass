@@ -1,4 +1,4 @@
-package exercise20;
+package exercise18;
 
 public class EvenDigitSum {
     public static int getEvenDigitSum(int number) {

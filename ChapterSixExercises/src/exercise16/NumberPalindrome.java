@@ -1,4 +1,4 @@
-package exercise18;
+package exercise16;
 
 public class NumberPalindrome {
     public static boolean isPalindrome(int number) {

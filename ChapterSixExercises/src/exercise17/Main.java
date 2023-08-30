@@ -2,11 +2,11 @@ package exercise17;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(SumOddRange.sumOdd(1, 100));     // Output: 2500
-        System.out.println(SumOddRange.sumOdd(-1, 100));    // Output: -1
-        System.out.println(SumOddRange.sumOdd(100, 100));   // Output: 0
-        System.out.println(SumOddRange.sumOdd(13, 13));     // Output: 13
-        System.out.println(SumOddRange.sumOdd(100, -100));  // Output: -1
-        System.out.println(SumOddRange.sumOdd(100, 1000));  // Output: 247500
+        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(252));   // Output: 4
+        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(257));   // Output: 9
+        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(0));     // Output: 0
+        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(5));     // Output: 10
+        System.out.println(FirstLastDigitSum.sumFirstAndLastDigit(-10));  // Output: -1
     }
 }
+

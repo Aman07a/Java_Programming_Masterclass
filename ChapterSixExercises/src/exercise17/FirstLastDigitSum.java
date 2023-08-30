@@ -1,4 +1,4 @@
-package exercise19;
+package exercise17;
 
 public class FirstLastDigitSum {
     public static int sumFirstAndLastDigit(int number) {

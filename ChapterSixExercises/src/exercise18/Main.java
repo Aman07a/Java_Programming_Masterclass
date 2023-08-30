@@ -2,9 +2,9 @@ package exercise18;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(NumberPalindrome.isPalindrome(-1221));  // Output: true
-        System.out.println(NumberPalindrome.isPalindrome(707));    // Output: true
-        System.out.println(NumberPalindrome.isPalindrome(11212));  // Output: false
+        System.out.println(EvenDigitSum.getEvenDigitSum(123456789));  // Output: 20
+        System.out.println(EvenDigitSum.getEvenDigitSum(252));        // Output: 4
+        System.out.println(EvenDigitSum.getEvenDigitSum(-22));        // Output: -1
     }
 }
 
