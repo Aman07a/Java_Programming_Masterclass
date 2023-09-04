@@ -1,3 +1,5 @@
+package exercise38;
+
 public class Bed {
     private String style;
     private int pillows;

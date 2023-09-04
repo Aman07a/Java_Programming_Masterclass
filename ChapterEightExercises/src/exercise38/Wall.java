@@ -1,3 +1,5 @@
+package exercise38;
+
 public class Wall {
     private String direction;
 

@@ -1,3 +1,5 @@
+package exercise38;
+
 public class Ceiling {
     private int height;
     private int paintedColor;

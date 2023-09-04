@@ -1,3 +1,5 @@
+package exercise38;
+
 public class Lamp {
     private String style;
     private boolean battery;
