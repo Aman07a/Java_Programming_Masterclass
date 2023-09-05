@@ -8,3 +8,4 @@ Finished Chapters:
 - Chapter 6: Control Flow
 - Chapter 7: OOP Part 1 - Inheritance
 - Chapter 8: OOP Part 2 - Polymorphism
+- Chapter 9: Arrays
