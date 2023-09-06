@@ -4,27 +4,24 @@ import java.util.ArrayList;
 
 public class MobilePhone {
     private String myNumber;
-    private ArrayList<Contact> myContacts;
+    private ArrayList < Contact > myContacts;
 
     public MobilePhone(String myNumber) {
         this.myNumber = myNumber;
-        this.myContacts = new ArrayList<>();
+        this.myContacts = new ArrayList < Contact > ();
     }
 
     public boolean addNewContact(Contact contact) {
-        int position = findContact(contact);
-        if (position == -1) {
+        if (findContact(contact.getName()) == -1) {
             myContacts.add(contact);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
-
 
     public boolean updateContact(Contact oldContact, Contact newContact) {
         int position = findContact(oldContact);
-        if (position != -1) {
+        if (position >= 0) {
             myContacts.set(position, newContact);
             return true;
         }
@@ -33,7 +30,7 @@ public class MobilePhone {
 
     public boolean removeContact(Contact contact) {
         int position = findContact(contact);
-        if (position != -1) {
+        if (position >= 0) {
             myContacts.remove(position);
             return true;
         }
@@ -56,7 +53,7 @@ public class MobilePhone {
 
     public Contact queryContact(String name) {
         int position = findContact(name);
-        if (position != -1) {
+        if (position >= 0) {
             return myContacts.get(position);
         }
         return null;
