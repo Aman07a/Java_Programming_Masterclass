@@ -11,3 +11,4 @@ Finished Chapters:
 - Chapter 9: Arrays
 - Chapter 10: List, ArrayList, LinkedList, Iterator, Autoboxing
 - Chapter 11: Abstraction in Java
+- Chapter 12: Generics
