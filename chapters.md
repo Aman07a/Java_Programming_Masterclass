@@ -12,4 +12,5 @@ Finished Chapters:
 - Chapter 10: List, ArrayList, LinkedList, Iterator, Autoboxing
 - Chapter 11: Abstraction in Java
 - Chapter 12: Generics
-- Sectie 13: Nested Classes and Types
+- Chapter 13: Nested Classes and Types
+- Chapter 14: Lambda Expressions, Functional Interfaces, and Method References
