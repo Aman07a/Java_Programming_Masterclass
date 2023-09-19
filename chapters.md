@@ -14,3 +14,4 @@ Finished Chapters:
 - Chapter 12: Generics
 - Chapter 13: Nested Classes and Types
 - Chapter 14: Lambda Expressions, Functional Interfaces, and Method References
+- Chapter 15: Java Collections
