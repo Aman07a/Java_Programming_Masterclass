@@ -17,7 +17,6 @@ public class MainFinal {
 
         GameConsole<PirateGame> game =
                 new GameConsole<>(new PirateGame("Pirate Game"));
-
     }
 }
 
