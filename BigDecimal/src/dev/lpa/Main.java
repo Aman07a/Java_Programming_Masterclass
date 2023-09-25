@@ -36,7 +36,7 @@ public class Main {
                     bd, bd.unscaledValue(), bd.scale(), bd.precision());
         }
 
-        double[] doubles = {15.456, 8, 10000.000001, .123};
+        double[] doubles = {15.456, 8, 10000.000001, .125};
         Arrays.setAll(bds, i -> BigDecimal.valueOf(doubles[i]));
         System.out.println("---------------------------");
         System.out.printf("%-14s %-15s %-8s %s%n", "Value", "Unscaled Value", "Scale",
