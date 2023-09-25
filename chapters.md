@@ -16,3 +16,4 @@ Finished Chapters:
 - Chapter 14: Lambda Expressions, Functional Interfaces, and Method References
 - Chapter 15: Java Collections
 - Chapter 16: Using Final, Immutable classes, Constructors, Initializers, Sealed classes
+- Chapter 17: Streams
