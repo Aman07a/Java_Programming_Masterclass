@@ -19,3 +19,4 @@ Finished Chapters:
 - Chapter 17: Streams
 - Chapter 18: Back to a Few Nuts and Bolts
 - Chapter 19: Regular Expressions
+- Chapter 20: Input & Output (I/O), Working with Files in Java
