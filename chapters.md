@@ -20,3 +20,4 @@ Finished Chapters:
 - Chapter 18: Back to a Few Nuts and Bolts
 - Chapter 19: Regular Expressions
 - Chapter 20: Input & Output (I/O), Working with Files in Java
+- Chapter 21: Naming Conventions and Packages.  static and final keywords
