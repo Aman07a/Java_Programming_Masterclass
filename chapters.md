@@ -22,3 +22,4 @@ Finished Chapters:
 - Chapter 20: Input & Output (I/O), Working with Files in Java
 - Chapter 21: Naming Conventions and Packages.  static and final keywords
 - Chapter 22: JavaFX
+- Chapter 23: Concurrency in Java
