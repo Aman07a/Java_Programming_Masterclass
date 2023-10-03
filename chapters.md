@@ -23,3 +23,4 @@ Finished Chapters:
 - Chapter 21: Naming Conventions and Packages.  static and final keywords
 - Chapter 22: JavaFX
 - Chapter 23: Concurrency in Java
+- Chapter 24: Debugging and Unit Testing
