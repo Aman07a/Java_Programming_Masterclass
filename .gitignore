@@ -168,3 +168,4 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/java,node
 *.xml
+httpcomponents-client-5.2.1-bin/
