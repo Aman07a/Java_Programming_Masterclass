@@ -26,3 +26,4 @@ Finished Chapters:
 - Chapter 24: Debugging and Unit Testing
 - Chapter 25: Databases
 - Chapter 26: Java Networking Programming
+- Chapter 27: Java 9 Module System
