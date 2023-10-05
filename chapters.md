@@ -28,3 +28,4 @@ Finished Chapters:
 - Chapter 26: Java Networking Programming
 - Chapter 27: Java 9 Module System
 - Chapter 28: Migrating Java Projects to Java 9
+- Chapter 29: New Format Coding Exercises
