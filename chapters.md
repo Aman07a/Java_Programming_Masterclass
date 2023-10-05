@@ -29,3 +29,4 @@ Finished Chapters:
 - Chapter 27: Java 9 Module System
 - Chapter 28: Migrating Java Projects to Java 9
 - Chapter 29: New Format Coding Exercises
+- Chapter 30: Course Introduction - Old content for Java 11
