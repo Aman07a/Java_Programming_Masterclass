@@ -24,3 +24,4 @@ Finished Chapters:
 - Chapter 22: JavaFX
 - Chapter 23: Concurrency in Java
 - Chapter 24: Debugging and Unit Testing
+- Chapter 25: Databases
