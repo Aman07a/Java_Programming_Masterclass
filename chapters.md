@@ -31,3 +31,4 @@ Finished Chapters:
 - Chapter 29: New Format Coding Exercises
 - Chapter 30: Course Introduction - Old content for Java 11
 - Chapter 31: Software Tools Setup - Old content for Java 11
+- Chapter 32: First Steps - Old content for Java 11
