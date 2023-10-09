@@ -3,19 +3,15 @@ package com.timbuchalka;
 public class Main {
 
     public static void main(String[] args) {
+        VipPerson person1 = new VipPerson();
+        System.out.println(person1.getName());
 
-        Account bobsAccount = new Account();
+        VipPerson person2 = new VipPerson("Bob", 25000.00);
+        System.out.println(person2.getName());
 
-        System.out.println(bobsAccount.getNumber());
-        System.out.println(bobsAccount.getBalance());
-
-        bobsAccount.withdrawal(100.0);
-
-        bobsAccount.deposit(50.0);
-        bobsAccount.withdrawal(100.0);
-
-        bobsAccount.deposit(51.0);
-        bobsAccount.withdrawal(100.0);
+        VipPerson person3 = new VipPerson("Tim", 100.00, "tim@email.com");
+        System.out.println(person3.getName());
+        System.out.println(person3.getEmailAddress());
     }
 }
 
