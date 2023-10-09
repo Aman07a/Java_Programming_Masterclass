@@ -32,3 +32,4 @@ Finished Chapters:
 - Chapter 30: Course Introduction - Old content for Java 11
 - Chapter 31: Software Tools Setup - Old content for Java 11
 - Chapter 32: First Steps - Old content for Java 11
+- Chapter 33: Java Tutorial: Expressions, Statements, and More - Old content for Java 11
