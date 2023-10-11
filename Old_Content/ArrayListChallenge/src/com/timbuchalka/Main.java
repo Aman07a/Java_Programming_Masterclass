@@ -7,7 +7,6 @@ public class Main {
     private static MobilePhone mobilePhone = new MobilePhone("0039 330 4404");
 
     public static void main(String[] args) {
-
         // Create a program that implements a simple mobile phone with the following capabilities.
         // Able to store, modify, remove and query contact names.
         // You will want to create a separate class for Contacts (name and phone number).
@@ -73,6 +72,56 @@ public class Main {
         } else {
             System.out.println("Cannot add, " + name + " already on file");
         }
+    }
+
+    private static void updateContact() {
+        System.out.println("Enter existing contact name: ");
+        String name = scanner.nextLine();
+        Contact existingContactRecord = mobilePhone.queryContact(name);
+        if (existingContactRecord == null) {
+            System.out.println("Contact not found.");
+            return;
+        }
+
+        System.out.print("Enter new contact name: ");
+        String newName = scanner.nextLine();
+        System.out.print("Enter new contact phone number: ");
+        String newNumber = scanner.nextLine();
+        Contact newContact = Contact.createContact(newName, newNumber);
+        if (mobilePhone.updateContact(existingContactRecord, newContact)) {
+            System.out.println("Successfully updated record");
+        } else {
+            System.out.println("Error updating record.");
+        }
+    }
+
+    private static void removeContact() {
+        System.out.println("Enter existing contact name: ");
+        String name = scanner.nextLine();
+        Contact existingContactRecord = mobilePhone.queryContact(name);
+        if (existingContactRecord == null) {
+            System.out.println("Contact not found.");
+            return;
+        }
+
+        if (mobilePhone.removeContact(existingContactRecord)) {
+            System.out.println("Successfully deleted");
+        } else {
+            System.out.println("Error deleting contact");
+        }
+    }
+
+    private static void queryContact() {
+        System.out.println("Enter existing contact name: ");
+        String name = scanner.nextLine();
+        Contact existingContactRecord = mobilePhone.queryContact(name);
+        if (existingContactRecord == null) {
+            System.out.println("Contact not found.");
+            return;
+        }
+
+        System.out.println("Name: " + existingContactRecord.getName()
+                + " phone number is " + existingContactRecord.getPhoneNumber());
     }
 
     private static void startPhone() {
