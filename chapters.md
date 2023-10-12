@@ -35,3 +35,4 @@ Finished Chapters:
 - Chapter 33: Java Tutorial: Expressions, Statements, and More - Old content for Java 11
 - Chapter 34: Control Flow Statements - Old content for Java 11
 - Chapter 35: OOP Part 1 - Classes, Constructors and Inheritance - Old content for Java 11
+- Chapter 36: OOP Part 2 - Composition, Encapsulation, and Polymorphism - Old content for Java
