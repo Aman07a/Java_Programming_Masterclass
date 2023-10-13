@@ -38,3 +38,4 @@ Finished Chapters:
 - Chapter 36: OOP Part 2 - Composition, Encapsulation, and Polymorphism - Old content for Java
 - Chapter 37: Arrays, Java inbuilt Lists, Autoboxing and Unboxing - Old content for Java 11
 - Chapter 38: Inner and Abstract Classes & Interfaces - Old content for Java 11
+- Chapter 39: Java Generics - Old content for Java 11
