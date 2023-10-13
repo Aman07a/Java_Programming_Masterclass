@@ -40,3 +40,4 @@ Finished Chapters:
 - Chapter 38: Inner and Abstract Classes & Interfaces - Old content for Java 11
 - Chapter 39: Java Generics - Old content for Java 11
 - Chapter 40: Lambda Expressions - Old content for Java 11
+- Chapter 41: Streams - Old content for Java 11
