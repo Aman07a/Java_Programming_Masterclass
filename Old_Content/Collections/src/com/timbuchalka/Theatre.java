@@ -5,7 +5,7 @@ import java.util.*;
 public class Theatre {
 
     private final String theatreName;
-    public List<Seat> seats = new ArrayList<>();
+    private List<Seat> seats = new ArrayList<>();
 
     public Theatre(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
@@ -28,7 +28,6 @@ public class Theatre {
         int high = seats.size() - 1;
 
         while (low <= high) {
-            System.out.print(".");
             int mid = (low + high) / 2;
             Seat midVal = seats.get(mid);
             int cmp = midVal.getSeatNumber().compareTo(seatNumber);
@@ -87,6 +86,10 @@ public class Theatre {
         public String getSeatNumber() {
             return seatNumber;
         }
+    }
+
+    public List<Seat> getSeatsList() {
+        return seats;
     }
 }
 

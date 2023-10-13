@@ -1,15 +1,13 @@
 package com.timbuchalka;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
         Theatre theatre = new Theatre("Olympian", 8, 12);
-        List<Theatre.Seat> seatCopy = new ArrayList<>(theatre.seats);
+        List<Theatre.Seat> seatCopy = new ArrayList<>(theatre.getSeatsList());
         printList(seatCopy);
 
         seatCopy.get(1).reserve();
@@ -22,8 +20,8 @@ public class Main {
         Collections.shuffle(seatCopy);
         System.out.println("Printing seatCopy");
         printList(seatCopy);
-        System.out.println("Printing theatre.seat");
-        printList(theatre.seats);
+        System.out.println("Printing theatre.seats");
+        printList(theatre.getSeatsList());
 
         Theatre.Seat minSeat = Collections.min(seatCopy);
         Theatre.Seat maxSeat = Collections.max(seatCopy);
@@ -33,12 +31,7 @@ public class Main {
         sortList(seatCopy);
         System.out.println("Printing sorted seatCopy");
         printList(seatCopy);
-
-
-        List<Theatre.Seat> newList = new ArrayList<>(theatre.seats.size());
-        Collections.copy(newList, theatre.seats);
     }
-
 
     public static void printList(List<Theatre.Seat> list) {
         for (Theatre.Seat seat : list) {
@@ -48,14 +41,8 @@ public class Main {
         System.out.println("======================================================================");
     }
 
-    public static void sortList(List<? extends Theatre.Seat> list) {
-        for (int i = 0; i < list.size() - 1; i++) {
-            for (int j = i + 1; j < list.size(); j++) {
-                if (list.get(i).compareTo(list.get(j)) > 0) {
-                    Collections.swap(list, i, j);
-                }
-            }
-        }
+    public static void sortList(List<Theatre.Seat> list) {
+        Collections.sort(list);
     }
 }
 
