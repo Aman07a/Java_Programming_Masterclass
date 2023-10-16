@@ -41,3 +41,4 @@ Finished Chapters:
 - Chapter 39: Java Generics - Old content for Java 11
 - Chapter 40: Lambda Expressions - Old content for Java 11
 - Chapter 41: Streams - Old content for Java 11
+- Chapter 42: Java Collections - Old content for Java 11
