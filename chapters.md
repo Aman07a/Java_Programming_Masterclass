@@ -35,10 +35,11 @@ Finished Chapters:
 - Chapter 33: Java Tutorial: Expressions, Statements, and More - Old content for Java 11
 - Chapter 34: Control Flow Statements - Old content for Java 11
 - Chapter 35: OOP Part 1 - Classes, Constructors and Inheritance - Old content for Java 11
-- Chapter 36: OOP Part 2 - Composition, Encapsulation, and Polymorphism - Old content for Java
+- Chapter 36: OOP Part 2 - Composition, Encapsulation, and Polymorphism - Old content for Java 11
 - Chapter 37: Arrays, Java inbuilt Lists, Autoboxing and Unboxing - Old content for Java 11
 - Chapter 38: Inner and Abstract Classes & Interfaces - Old content for Java 11
 - Chapter 39: Java Generics - Old content for Java 11
 - Chapter 40: Lambda Expressions - Old content for Java 11
 - Chapter 41: Streams - Old content for Java 11
 - Chapter 42: Java Collections - Old content for Java 11
+- Chapter 43: Regular Expressions - Old content for Java 11
