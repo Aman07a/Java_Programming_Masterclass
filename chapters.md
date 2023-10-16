@@ -45,3 +45,4 @@ Finished Chapters:
 - Chapter 43: Regular Expressions - Old content for Java 11
 - Chapter 44: Basic Input & Output including java.util - Old content for Java 11
 - Chapter 45: Archived Videos
+- Chapter 46: Extra Information - Source code, and other stuff
